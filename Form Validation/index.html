@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        form{
+            width: 7000px;
+            padding: 20px;
+        }
+
+        form div{
+            margin: 10px;
+        }
+        label{
+            display: block;
+        }
+
+        input:invalid,
+        input:required:invalid{
+            border: none;
+            outline: 2px solid red;
+            border-radius: 2px;
+        }
+        input:valid,
+        input:required{
+            border: 1px solid black;
+            outline: inherit;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body>
+  <form action="" method="post" autocomplete="off" novalidate>
+    <!-- Text -->
+    <div>
+        <label for="nama">Masukan Nama</label>
+        <input type="text" name="nama" id="nama" required minlength="2" maxlength="10" oninvalid="this.setCustomValidity('Ini harus diisi!')" oninput="this.setCustomValidty('')">
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label for="email">Masukan Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    
+
+
+    <!-- Telepon -->
+    <div>
+        <label for="nohp">Masukan No HP</label>
+        <input type="tel" name="nohp" id="nohp" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$">
+    </div>
+
+    <!-- URL -->
+    <div>
+        <label for="website">Masukan URL</label>
+        <input type="url" name="website" id="website">
+    </div>
+
+    <!-- Number -->
+    <div>
+        <label for="angka">Masukan Angka</label>
+        <input type="number" name="angka" id="angka" min="10" max="100" step="10">
+    </div>
+
+    <!-- Range -->
+     <div>
+        <label for="slider">Masukan Angka</label>
+        <span class="awal">0</span>
+        <input type="range" name="slider" id="slider" minlength="0" maxlength="100" step="5">
+        <span class="akhir">100</span>
+    </div>
+
+    <!-- Datetime -->
+    <div>
+        <label for="Tanggal">Masukan Tanggal</label>
+        <input type="date" name="Tanggal" id="Tanggal">
+       
+    </div>
+    <!-- Color Picker -->
+    <div>
+        <label for="warna">Masukan Warna</label>
+        <input type="color" name="warna" id="warna">
+        <span class="hexa"></span>
+    </div>
+    
+    <!-- Kodepos -->
+    <div>
+        <label for="kodepos">Masukan Kodepos</label>
+        <input type="text" name="kodepos" id="kodepos" pattern="^([1-9])[0-9]{4}$">
+    </div>
+
+
+    <!-- Button -->
+    <div>   
+        <button type="submit">kirim</button>
+    </div>
+
+  </form>  
+<script>
+    const slider = document.querySelector('#slider');
+    const awal = document.querySelector('.awal');
+    const  akhir = document.querySelector('.akhir');
+
+    awal.innerHTML = slider.min;
+    akhir.innerHTML = slider.value;
+    slider.addEventListener('input', function(){
+        akhir.innerHTML = slider.value;
+    });
+
+
+    const warna = document.querySelector('#warna');
+    const hexa = document.querySelector('.hexa'); 
+
+    hexa.innerHTML = warna.value;
+    warna.addEventListener('input', function(){
+        hexa.innerHTML = warna.value;
+        hexa.style.color = warna.value;
+    });
+
+
+</script>
+</body>
+</html>
