@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Opacity</title>
+        <style>
+        .g2{
+          margin-top: 50px;
+        }
+            .satu {
+                height: 300px;
+                width: 300px;
+                background-color: salmon;
+                opacity: 0.5;
+                position: relative;
+            }
+            /* Element child tidak bisa menjadi solid jika element parent nya memiliki opacity */
+            /* Bisa di akali menggunakan rgba atau hsla */
+            .dua {
+                height: 200px;
+                width: 200px;
+                background-color: crimson;
+                /* opacity element child ini menjadi 25 terhadap element parent nya*/
+                opacity: 0.5;
+                position: absolute;
+                right: -50px;
+                bottom: -50px;
+            }
+
+            .tiga {
+                height: 300px;
+                width: 300px;
+                background-color: rgba(255, 25, 0,0.1);
+                position: relative;
+            }
+
+            .empat {
+                height: 200px;
+                width: 200px;
+                background-color: darkslategray;
+                position: absolute;
+                right: -50px;
+                bottom: -50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>menggunakan opacity</h1>
+        <div class="satu">
+            <div class="dua"></div>
+        </div>
+
+        <h1 class="g2">Menggunakan Hsla / Rgba</h1>
+        <div class="tiga">
+            <div class="empat"></div>
+        </div>
+    </body>
+</html>

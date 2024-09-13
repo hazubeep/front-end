@@ -1,0 +1,44 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Monospace;
+}
+
+.container{
+  width: 900px;
+  margin: 0 auto;
+  background-color: #eee;
+  display: flex;
+  padding: 20px 20px 1000px 20px  ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ .kolom-utama{
+  order: 2;
+  flex: 4;
+}
+
+.kolom-satu{
+  order: 1;
+  flex: 1;
+  align-self:  center;
+}
+
+
+.kolom-dua{
+  order: 3;
+  flex: 1;
+}
+
+.kolom-satu ul li   {
+  list-style: none;
+}
+
+.kolom-satu ul li a{
+  text-decoration: none;
+}
+

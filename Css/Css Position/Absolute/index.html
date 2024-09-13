@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Position Relative</title>
+  <style type="text/css" media="all">
+  
+    .item1, .item3{
+      background-color: salmon;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 2px  rgba(0,0,0,.5);
+    }
+    
+    .item2{
+      background-color: crimson;
+      left: 0;
+      top: 350px;
+      right: 0;
+      /* bottom: 0; */
+      position: absolute;
+    }
+    h1{
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Position Absolute</h1>
+
+    <div class="item item1">
+      <h1>Static</h1>
+    </div>
+  
+    <div class="item item2">
+      <h1>Absolute</h1>
+    </div>
+  
+    <div class="item item3">
+      <h1>Static</h1>
+    </div>
+</body>
+</html>

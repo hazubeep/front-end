@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Shadow</title>
+  <style type="text/css" media="all">
+  
+ /*Urutan Value: inset x-offset (Horizontal), y-offset (vertikal), value Blur,Spread/size, warna*/
+  
+    div{
+      width: 300px;
+      height: 300px;
+      background-color: salmon;
+    }
+    .satu{
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,.5);
+    }
+    
+    .dua{
+      box-shadow: inset 0 0 10px 10px rgba(0,0,255,.5);
+    }
+    
+    .tiga{
+      box-shadow: 5px 5px 10px 5px rgb(0,0,255),
+      -5px -5px 10px 5px rgb(255,0,0)
+      ;
+      border-radius: 50%;
+    }
+    
+    h1{
+      text-shadow: 5px 5px 10px red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Shadow Biasa</h1>
+  <div class="satu"></div>
+  
+  
+  <h1>Box Shadow inset</h1>
+  <div class="dua"></div>
+  
+  
+  <h1>Multiple Box Shadow</h1>
+  <div class="tiga"></div>
+  
+  
+</body>
+</html>

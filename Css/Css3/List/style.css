@@ -1,0 +1,11 @@
+body {
+    font-family: Monospace;
+}
+
+ol {
+    list-style: upper-alpha;
+    list-style: inside lower-alpha;
+}
+ul {
+    list-style-position: inside;
+}
