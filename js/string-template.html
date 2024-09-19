@@ -7,21 +7,38 @@
 </head>
 <body>
     <script>
+        // String template support string multiline, sedangkan string biasa tidak support multi line. 
 
 
+
+        // Subtitusi pada string template 
         const name = "Hazby Asyzyirazzy Rachman Putra"
-        const umur = 14;
-        const template = `name : ${name} ${umur}`;
+        const template = `name : ${name}`;
 
         console.info(template);
 
 
 
-
+        // Subtitusi & ekspresi pada string template
         const kelas = "XI PPLG 2";
         const nilai = 75;
         const template2 = `kelas ${kelas} Lulus : ${nilai >= 75}`;
+
         console.info(template2);
+
+
+        // string multiline 
+        // perhatikan indentasi
+        const multiline = `Hallo nama saya Hazby
+        Saya adalah seorang siswa SMK
+        Saya suka manisan`
+
+        //Jika string biasa tidak akan bisa melakukan multiline string
+
+
+        document.writeln("<pre>");
+            document.writeln(multiline);
+        document.writeln("</pre>");
 
     </script>
 </body>

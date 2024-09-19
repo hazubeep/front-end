@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String & Number</title>
+</head>
+<body>
+    <script>
+        // parseInt(string)
+        // Mengkonversi dari string menjadi number (Bilangan bulat)
+
+        // parseFloat(string)
+        // Mengkonversi dari string menjadi number (Bilangan pecahan)
+
+        // Number(string)
+        // Mengkonversi dari string menjadi number (Bilangan bulat || bilangan pecahan )
+
+        // number.toString()
+        // Mengkonversi dari number menjadi string
+
+
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+
+        document.writeln(`${sum}`);
+
+
+
+        
+        document.writeln(`<p>${parseInt("1.1")}</p>`)
+        document.writeln(`<p>${parseFloat("1.1")}</p>`)
+        document.writeln(`<p>${Number("1.1")}</p>`)
+
+        const nilai1 = 1;
+        const nilai2 = 1;
+        const total = nilai1.toString() + nilai2.toString();
+  
+        document.writeln(`<p>${total}</p>`)
+
+        
+
+    </script>
+</body>
+</html>
