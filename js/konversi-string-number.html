@@ -39,6 +39,28 @@
   
         document.writeln(`<p>${total}</p>`)
 
+        // NaN (Not a Number)
+        // parseInt() dan parseFloat() masih mentolelir NaN; apabila karakter tersebut ada diakhir atau dibelakang number. Sedang kan Number() tidak      mentolelir sama sekali 
+
+
+        // Contoh
+        document.writeln(`<p>${parseInt("1.1k")}</p>`);
+        document.writeln(`<p>${parseFloat("j1.1lk")}</p>`);
+
+        document.writeln(`<p>${Number("1.1")}</p>`);
+        document.writeln(`<p>${Number("1g")}</p>`);
+        document.writeln(`<p>${Number("1b")}</p>`);
+
+        // NaN jika di operasikan dengan apapun maka hasil nya akan NaN
+        const first = Number("salah");
+        const totalNumber = first + 100; 
+        document.writeln(`<p>${totalNumber}</p>`);
+
+        // Function isNaN bisa digunakan untuk meng cek apakah number tersebut NaN atau bukan. True jika number tersebut NaN; false sebaliknya
+
+        document.writeln(`<p>${isNaN(totalNumber)}</p>`);
+        document.writeln(`<p>${isNaN(nilai1)}</p>`);
+
         
 
     </script>
