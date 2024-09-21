@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipe Data Array</title>
 </head>
+
 <body>
     <script>
         let arrayKosong = [];
-        let arrayNama  = ["Hazby", "Asyzyirazzy", "Rachman", "Putra"];
+        let arrayNama = ["Hazby", "Asyzyirazzy", "Rachman", "Putra"];
+        console.table(arrayKosong);
+        
+
+
+        // Push data pada array
+        const names = [];
+        names.push("Hazby");
+        names.push("Asyzyirazzy", "Rachman", "Putra");
+        names.push("Budi", "Joko", "Rudi")
+
+        console.table(names);
+
+
+        // Menampilkan Length atau panjang array
+        console.log(names.length);
+
+        //Menampilkan array dengan index 
+        console.log(names[0]);
+
+        // Mengganti data pada index tertentu
+        console.log(names[0] = "Cong");
+
+
+
+        // Menghapus data pada array
+        // Ini hanya menghapus data pada array, bukan berarti menghapus index nya, sehingga kita dapat menggunakan index nya lagi
+
+        // Menghapus data pada array akan membuat index array tidak berurutan; tidak akan menjadi berurutan secara otomatis
+        delete names[1];
+        console.table(names);
+
+        console.table(names);
+        names.push("TOtot");
+        console.log(names.length);
+        names[1] = "asep";
+        console.table(names)
+        
+
+
+
+        // Array multidimensi
+        let matriks = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        console.log(matriks[0][1]); // Mengakses array pada baris ke 1, kolom ke 2 : 2
+        console.log(matriks);
+
     </script>
+
 </body>
+
 </html>
