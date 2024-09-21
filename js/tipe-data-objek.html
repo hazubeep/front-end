@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Objek</title>
+</head>
+<body>
+    <script>
+
+        const person = {}; // Object kosong
+
+        // Menambah atau mengubah object
+        person["nama"] = "hazby";
+        person["alamat"] = "IX";
+        person["kelas"] = 2;
+
+
+        console.table(person);
+        
+        // Menghapus object
+        delete person["kelas"];
+        console.table(person);
+
+
+
+        // object langsung 
+        const orang = {
+            // Menggunakan "" jika properti nya mengandung spasi
+            "nama lengkap" : "hazby",
+            umur: 18,
+            hobi : "Jalan jalan"
+        };
+
+        console.table(`Nama : ${orang["nama lengkap"]}`);
+        console.table(`Alamat : ${orang.umur}`);
+        console.table(`Nama : ${orang.hobi}`);
+
+
+        </script>
+</body>
+</html>
