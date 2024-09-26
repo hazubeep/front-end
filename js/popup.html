@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Popup</title>
+</head>
+<body>
+  <script>
+    const masuk = confirm("Yakin mau masuk");
+    if(masuk){
+      let nama = prompt("Masukan Nama Anda");
+      if (nama == "") {
+        alert(`null`);
+      } else {
+        alert(`Hallo ${nama}`);
+      }
+    }else{
+      alert("Bye Bye");
+    }
+  </script>
+</body>
+</html>
