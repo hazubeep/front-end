@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>For in</title>
+    </head>
+    <body>
+        <script>
+            let person = {
+                firstName: "Hazby",
+                middleName: "Rachman",
+                lastName: "Putra",
+                school : "SMKN 1 SUMEDANG"
+            };
+            
+            // For in di object
+            for (const name in person) {
+                document.writeln(`<p> ${person[name]}</p>`);
+            }
+            
+            // For in di array
+            const names = ["Hazby", "Asyzyirazzy", "Rachman", " putra"];
+            
+            for(const karakter in names){
+              document.writeln(`<p>${karakter} : ${names[karakter]}</p>`);
+            }
+        </script>
+    </body>
+</html>
