@@ -22,6 +22,16 @@
   for(const chara of makanan){
     document.writeln(`<p>${chara}</p>`)
   }
+  
+  const test = {
+    matematika: "90",
+    inggris : "100",
+    sunda : "100"
+  };
+  
+  for(const hasil in test){
+    document.writeln(`<p> ${hasil} : ${test[hasil]}</p>`)
+  }
   </script>
 </body>
 </html>

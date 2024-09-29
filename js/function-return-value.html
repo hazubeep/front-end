@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Function Return Value</title>
+</head>
+<body>
+  <script>
+  
+  // Fungsi Cari Item
+    function searchItem(array, items){
+      for(const no of array){
+        if(no === items){
+          console.info(`No ke ${no}`);
+          return "Ikan ditemukan";
+        }
+      }
+      return false;
+    }
+    
+    const number = [2,3,8,3523,2355,732,3522];
+    
+    const items = parseInt(prompt("Masukan Jenis Ikan"));
+
+    const found = searchItem(number, items);
+    
+    document.writeln(`<p>${found}</p>`);
+    
+    // Fungsi Nilai
+    
+    function nilai(value){
+      if(value > 90){
+        return "A"
+      }else if(value > 70){
+        return "B"
+      }else if(value > 50){
+        return "C"
+      }else {
+        return "Tidak lulus"
+      }
+    }
+    
+    let kbm = Number(prompt("Masukan Nilai"));
+    
+    const hasil = nilai(kbm);
+    
+  
+      for(kbm= 0; kbm <= 40 ; kbm++){
+        document.writeln(`<p>Yahaha coba lagi</p>`)
+      }
+    document.writeln(`<p>Nilai nya adalah ${hasil}</p>`);
+  </script>
+</body>
+</html>

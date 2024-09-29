@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>With statment</title>
+    </head>
+    <body>
+        <script>
+            // with statment tidak direkomendasikan untuk di gunakan karena membuat kode menjadi ambigu
+            // with statment digunakan untuk menurunkan scope tanpa memanggil data
+
+            // Tanpa menggunakan with statment
+            const name = {
+                firstName: "Alex",
+                middleName: "Budiono",
+                lastName: "Siregar"
+            };
+
+            console.log(name.firstName);
+            console.log(name.middleName);
+            console.log(name.lastName);
+
+            // Menggunakan with statment
+
+            console.log(firstName);
+            with (name) {
+                console.log(firstName);
+                console.log(middleName);
+                console.log(lastName);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Default Paramater</title>
+</head>
+<body>
+  <script>
+    // ketika membuat function kita bisa menambahkan value default untuk parameter, ini bisa digunakan sebagai fallback apabila tidak ada argument yang diinput 
+    
+    
+    function data(nama, kelamin = "unknown"){
+      console.log(nama);
+      console.log(kelamin);
+    }
+    
+    data("iwan");
+    
+    data("Maman", "Gerengseng");
+    
+    data("Gadi", undefined);
+  </script>
+</body>
+</html>break.html
