@@ -1,29 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tutorial JS</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutorial JS</title>
-</head>
+    <body>
+        <script>
+            const nilaiUjian = 90;
+            const nilaiAbsensi = 60;
 
-<body>
-  <script>
-    const nilaiUjian = 90;
-        const nilaiAbsensi= 60;
+            const lulusUjian = nilaiUjian >= 75;
+            document.writeln(lulusUjian);
 
-        const lulusUjian = nilaiUjian  >= 75;
-        document.writeln(lulusUjian)
+            const lulusAbsensi = nilaiAbsensi >= 75;
+            document.writeln(lulusAbsensi);
 
-        const lulusAbsensi = nilaiAbsensi  >= 75;
-        document.writeln(lulusAbsensi)
-
-
-        const lulus = lulusAbsensi || lulusUjian;
-        document.writeln(lulus);
-
-
-  </script>
-</body>
-
+            const lulus = lulusAbsensi || lulusUjian;
+            document.writeln(lulus);
+        </script>
+    </body>
 </html>

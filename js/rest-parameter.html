@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rest Parameter</title>
+    </head>
+    <body>
+        <script>
+            // Rest Parameter adalah fitur dimana kita dapat mengirim data sebanyak banyaknya pada satu parameter dan akan di konversi menjadi array secara otomatis
+            // Rest parameter hanya boleh ada 1 di setiap function dan harus disimpan di akhir
+            //Dibahasa pemrograman lain ada juga yang menyebutnya syntax arguments
+
+            // Contoh rest parameter
+            function sum(nama, ...harga) {
+                let total = 0;
+
+                for (const jumlah of harga) {
+                    total += jumlah;
+                }
+                document.writeln(`buah <p>${nama} jumlah ${total}</p>`);
+            }
+            sum("Semangka", 1, 2, 3, 4, 5);
+
+            // spread syntax
+            // spread syntax digunakan apabila sebelum nya sudah ada data array, karena di js tidak ada fitur array di konversi menjadi rest parameter
+            const values = [1, 3, 3, 5, 4];
+
+            sum("Pisang", ...values);
+            
+          // arguments Object atau versi lama dari rest parameter
+          // kekurangan nya kita tidak bisa mengatur parameternya
+          function sumOld(){
+            total = 0;
+            for(const data of arguments){
+              total += data;
+            }
+            
+            document.writeln(`<p>${total}</p>`);
+          }
+          
+          sumOld(10,10,10,10,10);
+        </script>
+    </body>
+</html>
