@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function sebagai value</title>
+</head>
+<body>
+    <script>
+        
+        // Fungsi pertama
+        function sebutNama(nama){   
+            document.writeln(`<p>Hallo ${nama}</p>`);
+        }
+        sebutNama("Dandi")
+
+
+        // Fungsi pertama
+        function nama(callback){
+            callback("Hazby")
+        }
+
+
+        // Menggunakan function sebutNama sebagai argument yang akan dikirim ke parameter callback di function nama
+        nama(sebutNama);
+
+
+
+        // cara sederhana 
+        function test(nama, callback){
+            callback(nama);
+        }
+
+        test("Iwan", sebutNamaz);
+
+    </script>
+</body>
+</html>
