@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // Scope merupakan area akses sebuah data 
+        // ada dua jenis scope, global dan lokal
+        // setiap kita membuat function, maka kita akan membuat local scope untuk funcion tersebut
+        // data diglobal bisa di akses dari local scope, namun data di local hanya bisa diakses dilocal scope tersebut atau discope local dibawahnya (dalam kasus function dalam function)
+
+        //global scope 
+        let i = 0;
+
+        function myFun() {
+           i++;
+           let x = 0;
+        }
+
+        console.log(x);//error, karena mengakses local scope
+
+
+        myFun();
+        myFun();
+        myFun();
+
+        document.writeln(i);
+
+    </script>
+</body>
+</html> 
