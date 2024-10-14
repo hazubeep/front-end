@@ -8,21 +8,26 @@
 </head>
 <body>
   <script>
+    // Function generator adalah function yang digunakan untuk membuat data generator
+    // Generator adalah data yang bisa diiterasi seperti array; meskipun bukan array
+    // untuk membuat function generator, kita perlu menggunakan tanda * (bintang) setelah kata funtion
+    // dan untuk mengembalikan data di tiap iterasi, kita bisa gunakan kata kunci yield diikuti datanya
+
+
     function* myFunction(value){
       for(let i = 1; i <= value; i++ ){
-        const number = 1;
         if(i % 2 === 1){
-          document.writeln(`<p>Yield ke ${number}</p>`)
+          console.log(`yield ke ${i}`);
           yield i;
         }
-        number++;
       }
     }
     
     const name = myFunction(100);
     
     for(const names of name){
-      document.writeln(`${names}`)
+      console.log(names);
+      
     }
   </script>
 </body>
