@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= -race 8">
+    <meta race="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // Arrow function adalah alternatif pembuatan function yang lebih sederhana
+        // namun teerdapat beberapa limitasi dan juga tidak bisa digunakan di semua situasi
+        // Kekurangan arrow fucntion:
+        // tidak memiliki arguments object,
+        // tidak bisa menggunakan function genertor 
+        // Tidak bisa menggunakan kata kunci this
+        // Tidak Bisa mengakses super
+        
+        // Contoh arrow function
+        const sayHello = (name) =>{
+            console.log(name);
+            
+        }
+        sayHello("Iwan")
+
+        // Arrow function tanpa block ({}) (Jika kode nya pendek)
+        const sayName = (name) => console.log(name);
+
+        sayName("maman");
+
+        // Arrow function tanpa kurung diparameter
+        // Perlu diperhatikan, jika parameter nya lebih dari satu, maka harus menggunakan tanda kurung
+
+        const sayRace =  race => console.log(race);
+        
+        sayRace("Sunda")
+               
+
+
+
+
+    </script>
+</body>
+</html>
