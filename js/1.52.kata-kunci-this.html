@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Kunci This</title>
+</head>
+<body>
+    <script>
+        // Kata kunci this adalah referensi ke object milik siapa
+        // Tiap lokasi kata kunci this, bisa berbeda-beda referensi pemiliknya 
+
+
+        // kata kunci this di object method
+        const food = {
+            nameFood : "Tongkol",
+            sayFood : function (nameFood){
+                console.log(nameFood);
+                console.log(this);
+                document.writeln(`${this.nameFood}`);
+                
+            }
+        }
+
+        console.log(food.sayFood("Tumis"));
+
+        console.info(this);    
+        
+    </script>
+</body>
+</html>
